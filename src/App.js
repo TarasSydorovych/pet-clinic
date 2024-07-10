@@ -9,6 +9,7 @@ import Address from "./components/main/address";
 import Vidguk from "./components/main/vidguk";
 import ContactForm from "./components/main/contactForm";
 import Footer from "./components/main/footer";
+import Chat from "./components/chat/chat";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Address />
       <Vidguk />
       <ContactForm />
+      <Chat />
       <Footer />
     </>
   );

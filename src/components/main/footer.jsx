@@ -62,7 +62,7 @@ const Footer = () => {
       {!windowDimensions && (
         <RxHamburgerMenu
           onClick={openBurgerMenu}
-          className={css.rxHamburgerMenu}
+          className={css.rxHamburgerMenuFooter}
         />
       )}
       {windowDimensions && (

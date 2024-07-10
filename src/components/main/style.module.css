@@ -14,6 +14,48 @@
   flex-direction: column;
   align-items: center;
 }
+.wrapFirstBlock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 110px);
+  background-color: rgba(0, 0, 0, 0.4); /* Чорний колір з 50% прозорістю */
+  z-index: 1;
+  margin-top: 110px;
+}
+.dispServP {
+  font-family: "Ubuntu";
+  font-size: 40px;
+  width: auto;
+  color: white;
+  font-weight: bolder;
+  margin-top: 0;
+  width: 700px;
+  letter-spacing: 2px;
+}
+.descTio {
+  font-family: "Ubuntu";
+  font-size: 25px;
+  width: auto;
+  color: white;
+  font-weight: bolder;
+  margin-top: 0;
+  width: 700px;
+  letter-spacing: 1px;
+}
+.nubberWrap {
+  width: auto;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid white;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
 .logoWrapo {
   height: 50px;
   width: auto;
@@ -96,18 +138,7 @@
 .liForNav:hover {
   color: #2dacdb;
 }
-.nubberWrap {
-  width: auto;
-  height: auto;
-  padding: 10px 30px 10px 30px;
-  border: 2px solid rgb(83, 127, 190);
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-  color: rgb(83, 127, 190);
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 30px;
-}
+
 .wrapAbout {
   width: 100%;
   height: auto;
@@ -178,6 +209,7 @@
   align-items: flex-start;
   margin-top: 240px;
   margin-left: 200px;
+  z-index: 2;
 }
 .wrapOpd {
   width: 50%;
@@ -188,26 +220,7 @@
   flex-direction: column;
   align-items: center;
 }
-.dispServP {
-  font-family: "Ubuntu";
-  font-size: 40px;
-  width: auto;
-  color: rgb(83, 127, 190);
-  font-weight: bolder;
-  margin-top: 0;
-  width: 700px;
-  letter-spacing: 2px;
-}
-.descTio {
-  font-family: "Ubuntu";
-  font-size: 25px;
-  width: auto;
-  color: rgb(83, 127, 190);
-  font-weight: bolder;
-  margin-top: 0;
-  width: 700px;
-  letter-spacing: 1px;
-}
+
 .dispServPth {
   font-family: "Lato", sans-serif;
   font-size: 100px;
@@ -520,6 +533,10 @@
 }
 .rxHamburgerMenu {
   font-size: 30px;
+  color: #41a3fa;
+}
+.rxHamburgerMenuFooter {
+  font-size: 30px;
   color: white;
 }
 .closeBurgerMenu {
@@ -599,6 +616,7 @@
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.05);
   background: white;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .cinnostiMainP {
   font-family: "Ubuntu";
@@ -902,7 +920,95 @@
   font-size: 30px;
   color: white;
 }
-@media only screen and (max-width: 600px) and (min-width: 300px) {
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  .liForNav {
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    color: #41a3fa;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .inputsForm {
+    width: 92%;
+    padding-left: 20px;
+    height: 35px;
+    border: 1px solid #41a3fa;
+    font-family: "Ubuntu";
+    color: grey;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .wrapInputsData {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .addresInHeader {
+    text-align: center;
+  }
+  .wrapFirstHeader {
+    width: 100%;
+    height: 100px;
+    background: #41a3fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .wrapFirstBlock {
+    background: url("../../img/slide-01.webp");
+    background-size: cover;
+    width: calc(100% - 20px);
+    height: calc(700px);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapFirstBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(700px);
+    background-color: rgba(0, 0, 0, 0.4); /* Чорний колір з 50% прозорістю */
+    z-index: 1;
+    margin-top: 171px;
+  }
+  .wrapPlf {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .oneAddressBlockWrap {
+    margin-top: 20px;
+  }
+  .wrapImaged {
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 100;
+    position: relative;
+    z-index: 6;
+  }
+  .psectContactForm {
+    font-family: "Ubuntu";
+    width: 100%;
+    font-size: 20px;
+
+    color: #1766aa;
+  }
   .wrapAllVidgukl {
     width: 100%;
     height: auto;
@@ -944,10 +1050,10 @@
   .nubberWrap {
     width: auto;
     height: auto;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid white;
     font-family: "Lato", sans-serif;
-    font-size: 10px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -959,6 +1065,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+  .wrapVidguks {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .smallWrap {
     min-height: auto;
@@ -989,14 +1103,28 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: 0;
   }
   .dispServP {
     font-family: "Lato", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
     color: white;
     font-weight: bolder;
     margin-top: 0;
+  }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 100%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .dispServPth {
     font-family: "Lato", sans-serif;
@@ -1008,7 +1136,7 @@
   }
   .wrapHeader {
     width: calc(100% - 20px);
-    height: 100px;
+    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -1144,7 +1272,7 @@
   }
   .wrapAddressKi {
     width: 100%;
-    height: calc(286px - 100px);
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -1152,8 +1280,104 @@
     background: #537ebe;
     padding-top: 100px;
   }
+  .wrapFroms {
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapOpd {
+    display: none;
+  }
+  .wrapImagedTwo {
+    display: none;
+  }
+  .wrapAllTextP {
+    width: 99%;
+    margin-left: 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapDescInm {
+    width: 99%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrapAddressKi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #537ebe;
+    padding-bottom: 100px;
+  }
 }
 @media only screen and (max-width: 700px) and (min-width: 479px) {
+  .wrapVidguks {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapImaged {
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 100;
+    position: relative;
+    z-index: 6;
+  }
+  .liForNav {
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 30px;
+    color: #41a3fa;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .oneAddressBlockWrap {
+    margin-top: 20px;
+  }
+  .psectContactForm {
+    font-family: "Ubuntu";
+    width: 100%;
+    font-size: 20px;
+
+    color: #1766aa;
+  }
+  .wrapDescInm {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .numberWrapD {
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+  }
+  .wrapAllVidgukl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .wrapAbout {
     width: 100%;
     height: auto;
@@ -1187,10 +1411,10 @@
   .nubberWrap {
     width: auto;
     height: auto;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid white;
     font-family: "Lato", sans-serif;
-    font-size: 10px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -1227,19 +1451,35 @@
     justify-content: space-between;
   }
   .wrapMainText {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: flex-start;
+    margin-top: 180px;
+    margin-left: 0px;
+  }
+  .wrapOpd {
+    width: 0%;
   }
   .dispServP {
-    font-family: "Lato", sans-serif;
-    font-size: 30px;
-    width: 100%;
+    font-family: "Ubuntu";
+    font-size: 40px;
+    width: auto;
     color: white;
     font-weight: bolder;
     margin-top: 0;
+    width: auto;
+    letter-spacing: 2px;
+  }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: auto;
+    letter-spacing: 1px;
   }
   .dispServPth {
     font-family: "Lato", sans-serif;
@@ -1251,7 +1491,7 @@
   }
   .wrapHeader {
     width: calc(100% - 20px);
-    height: 100px;
+    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -1387,16 +1627,49 @@
   }
   .wrapAddressKi {
     width: 100%;
-    height: calc(286px - 100px);
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     background: #537ebe;
-    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .wrapFroms {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapImagedTwo {
+    display: none;
+  }
+  .wrapOpd {
+    display: none;
+  }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 27px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 95%;
+    letter-spacing: 1px;
+  }
+  .wrapSmallVidguk {
+    width: 99%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 1300px) and (min-width: 1024px) {
+  .oneAddressBlockWrap {
+    margin-top: 20px;
+  }
   .wrapAllVidgukl {
     width: 100%;
     height: auto;
@@ -1443,26 +1716,98 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   .wrapFirstBlock {
-    background: url("../../img/slide-01Small.jpg");
+    background: url("../../img/slide-01.webp");
     background-size: cover;
     width: 100%;
     height: calc(775px - 110px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .wrapFirstBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(775px - 110px);
+    background-color: rgba(0, 0, 0, 0.4); /* Чорний колір з 50% прозорістю */
+    z-index: 1;
+    margin-top: 110px;
+  }
+  .wrapDescInmSecond {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: 150px;
+  }
+  .wrapMainText {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .wrapOpd {
+    width: 10%;
+  }
+  .dispServP {
+    font-family: "Ubuntu";
+    font-size: 40px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 700px;
+    letter-spacing: 2px;
+  }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 700px;
+    letter-spacing: 1px;
+  }
+  .nubberWrap {
+    width: auto;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .wrapFroms {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 701px) {
+  .oneAddressBlockWrap {
+    margin-top: 20px;
+  }
   .wrapAddressKi {
     width: 100%;
-    height: calc(286px - 100px);
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     background: #537ebe;
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   .wrapAbout {
     width: 100%;
@@ -1500,7 +1845,7 @@
     padding: 10px 20px 10px 20px;
     border: 2px solid white;
     font-family: "Lato", sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -1527,6 +1872,16 @@
     font-weight: bolder;
     margin-top: 0;
   }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 650px;
+    letter-spacing: 1px;
+  }
   .dispServPth {
     font-family: "Lato", sans-serif;
     font-size: 50px;
@@ -1537,7 +1892,7 @@
   }
   .wrapHeader {
     width: calc(100% - 20px);
-    height: 100px;
+    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -1670,5 +2025,101 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .wrapMainText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 200px;
+    margin-left: 15px;
+  }
+  .wrapOpd {
+    width: 0px;
+  }
+  .wrapAllVidgukl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .wrapHeader {
+    width: calc(100% - 80px);
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+  }
+  .wrapDescInmSecond {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: 150px;
+  }
+  .wrapFroms {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapImagedTwo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1300px) {
+  .wrapDescInm {
+    width: 510px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapFirstBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 110px);
+    background-color: rgba(0, 0, 0, 0.4); /* Чорний колір з 50% прозорістю */
+    z-index: 1;
+    margin-top: 110px;
+  }
+  .dispServP {
+    font-family: "Ubuntu";
+    font-size: 40px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 700px;
+    letter-spacing: 2px;
+  }
+  .descTio {
+    font-family: "Ubuntu";
+    font-size: 25px;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+    width: 700px;
+    letter-spacing: 1px;
+  }
+  .nubberWrap {
+    width: auto;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
   }
 }

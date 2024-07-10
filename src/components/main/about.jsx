@@ -3,7 +3,7 @@ import imageAbout from "../../img/slide-03.webp";
 import twoImage from "../../img/qwdd.jpg";
 const About = () => {
   return (
-    <div className={css.wrapAbout}>
+    <div className={css.wrapAbout} id="section3">
       <div className={css.wrapDescInm}>
         <p className={css.aboutJk}>Про нас</p>
         <p className={css.pDecAbout}>

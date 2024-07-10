@@ -1,7 +1,7 @@
 import css from "./style.module.css";
 const Servicec = () => {
   return (
-    <div className={css.wrapServiced}>
+    <div className={css.wrapServiced} id="section2">
       <div className={css.wrapSmallService}>
         <p className={css.servPMain}>Ми раді запропонувати наступні послуги:</p>
         <div className={css.wrapServicec}>

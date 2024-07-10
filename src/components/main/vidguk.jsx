@@ -22,7 +22,7 @@ const Vidguk = () => {
             <img className={css.wrapPhotoVidguk} src={vidgukTwo} alt="Photo" />
             <div className={css.wrapAllTextP}>
               <p className={css.wopPInVid}>
-                Чудова клініка! Мій пес Макс отримав тут найкращий догляд.
+                Чудова клініка! Мій собака Макс отримав тут найкращий догляд.
                 Ветлікарі дуже уважні і компетентні. Вдячна за допомогу!
               </p>
               <p className={css.wopPInVid}>Іра</p>

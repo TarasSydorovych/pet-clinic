@@ -27,7 +27,7 @@ export default function FirstBlock() {
   const [windowDimensions, setWindowDimensions] = useState(false);
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 1100) {
+      if (window.innerWidth < 1000) {
         setWindowDimensions(false);
       } else {
         setWindowDimensions(true);
@@ -96,7 +96,7 @@ export default function FirstBlock() {
   return (
     <>
       {" "}
-      <div className={css.wrapFirstHeader}>
+      <div id="section1" className={css.wrapFirstHeader}>
         <p className={css.addresInHeader}>
           Софіївська Борщагівка, вул. Райдужна 165 (ЖК "Київський квартал")
         </p>
@@ -107,7 +107,9 @@ export default function FirstBlock() {
       </div>
       <header className={css.wrapHeader}>
         <div className={css.wrapLogo}>
-          <img src={fromLogo} className={css.logoWrapo} />
+          <a href="/">
+            <img src={fromLogo} className={css.logoWrapo} />
+          </a>
         </div>
         {burgerCLick && (
           <div className={css.burgerMenuWrap}>
@@ -120,15 +122,15 @@ export default function FirstBlock() {
                 <a href="#section1" className={css.liForNav}>
                   Головна
                 </a>
+              </li>{" "}
+              <li className={css.liForNav}>
+                <a href="#section3" className={css.liForNav}>
+                  Про нас
+                </a>
               </li>
               <li className={css.liForNav}>
                 <a href="#section2" className={css.liForNav}>
                   Послуги
-                </a>
-              </li>
-              <li className={css.liForNav}>
-                <a href="#section3" className={css.liForNav}>
-                  Про нас
                 </a>
               </li>
               <li className={css.liForNav}>
@@ -152,15 +154,15 @@ export default function FirstBlock() {
                 <a href="#section1" className={css.liForNav}>
                   Головна
                 </a>
+              </li>{" "}
+              <li className={css.liForNav}>
+                <a href="#section3" className={css.liForNav}>
+                  Про нас
+                </a>
               </li>
               <li className={css.liForNav}>
                 <a href="#section2" className={css.liForNav}>
                   Послуги
-                </a>
-              </li>
-              <li className={css.liForNav}>
-                <a href="#section3" className={css.liForNav}>
-                  Про нас
                 </a>
               </li>
               <li className={css.liForNav}>
@@ -176,7 +178,7 @@ export default function FirstBlock() {
           +1(267) 780-76-27
         </a> */}
       </header>
-      <div id="section1" className={css.wrapFirstBlock}>
+      <div className={css.wrapFirstBlock}>
         <div className={css.wrapformWithT}>
           <div className={css.wrapOpd}></div>
           <div className={css.wrapMainText}>
